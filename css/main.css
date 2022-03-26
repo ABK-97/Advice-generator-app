@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: hsl(217, 19%, 24%);
+  color: hsl(193, 38%, 86%);
+  margin-top: 40%;
+  width: 95%;
+  margin: auto;
+  border-radius: 7px;
+  text-align: center;
+  position: relative;
+}
+.id {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+.advice {
+  font-size: 18px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.pattern-divider-mobile {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.pattern-dvider-desktop {
+  display: none;
+}
+
+.dice {
+  background-color: hsl(150, 100%, 66%);
+  width: fit-content;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.dice img {
+  width: 20px;
+  height: 20px;
+}
+
+.attribution {
+  margin-top: auto;
+  background-color: hsl(217, 19%, 24%);
+  padding: 15px;
+  font-size: 14px;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+}
+.attribution a {
+  color: hsl(150, 100%, 66%);
+}
+@media (min-width: 1201px) {
+  .container {
+    margin-top: 15%;
+    width: 35%;
+  }
+  .pattern-divider-mobile {
+    display: none;
+  }
+  .pattern-dvider-desktop {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .dice:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 20px 9px hsl(150deg 100% 66%);
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin-top: 25%;
+    width: 80%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    margin-top: 20%;
+    width: 75%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    margin-top: 16%;
+    width: 65%;
+  }
+}
